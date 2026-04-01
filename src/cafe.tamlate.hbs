@@ -1,0 +1,13 @@
+{{#each cafe}}
+    <li class="item">
+        <h2>Назва: {{name}}</h2>
+        <p>Тип зерна: {{type}}</p>
+        <p>Походження: {{origin_country}}</p>
+        <ul>
+            {{#each flavor_notes}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>Ціна за 100г: <{{price_per_100g}}/p>
+    </li>
+  {{/each}}
